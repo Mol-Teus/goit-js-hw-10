@@ -4,15 +4,307 @@
   | default @import url()
   |============================
 */
-/* Common styles */
+/* Common styles 
 @import url('./reset.css');
 @import url('./base.css');
 @import url('./container.css');
-@import url('./animations.css');
+@import url('./animations.css');*/
 
-/* Sections style */
+/* Sections style 
 @import url('./header.css');
 @import url('./vite-promo.css');
 @import url('./badges.css');
 @import url('./back-link.css');
-@import url('./footer.css');
+@import url('./footer.css');*/
+
+ /*
+
+.index-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 25px;
+  font-weight: 500;
+  color: royalblue;
+   
+   
+}
+
+.back-link {
+  color: purple;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.main-container {
+  padding-left: 70px;
+  padding-top: 100px;
+  
+}
+
+.timer {
+    
+  width: 346px;
+  height: 72px; 
+  
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+  
+  margin-top: 20px;
+  margin-left:20px;
+  margin-bottom:20px;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  
+   
+}
+#datetime-picker {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+   
+}
+ 
+ 
+.button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+ 
+
+button {
+  border: none;
+  background-color: lightgray;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  height: 30px;
+  width: 60px;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: darkgray;
+}
+
+.form {
+  padding-top: 30px;
+  padding-left:50px;
+  padding-bottom:30px;
+}
+.form label,
+.form legend {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.form fieldset {
+  margin-top: 15px;
+  width: 330px;
+  background-color: #e6f3ff;
+}
+
+.form button {
+  margin-top: 25px;
+  width: 360px;
+  height: 50px;
+  font-size: 17px;
+  font-weight:bold;
+}*/
+
+
+.input-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border: 1px solid #808080;
+  background: #fff;
+border-radius: 4px;
+width: 272px;
+height: 40px; 
+margin-left: 156px;
+margin-top: 36px;margin-bottom: 32px;
+outline: none;
+transition: border-color var(--time)var(--cudic);
+}
+.input-text:hover
+.input-text:focus {
+  border: 1px solid #000;
+}
+.input-text:active { 
+  border: 1px solid #4e75ff;
+  color: #000;
+}
+.input-text:disabled {
+  border: 1px solid #808080;
+  color: #808080;
+  background: #fafafa;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+margin-top: 25px;
+}
+.form button {
+  margin-top: 25px;
+  width: 350px;
+  height: 50px;
+  font-size: 17px;
+  font-weight:bold;
+}
+.button:hover {
+  background: #6c8cff;
+}
+.button:disabled {
+  background: #cfcfcf;
+  color: #989898;
+}
+
+.timer {
+  width: 346px;
+height: 72px;
+display: flex;
+margin-left: 15px;
+gap: 5px;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 82px;
+height: 72px;
+
+}
+.value {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 40px;
+line-height: 120%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+.label {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2e2f42;
+}
+
+
+.form {
+width: 350px;
+height: 200px;
+background: #fff;
+padding-left: 20px;
+padding-top: 36px;
+}
+.label-delay {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+height: 72px;
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+margin-bottom: 30px;
+}
+.input-delay {
+  border: 1px solid #808080;
+border-radius: 4px;
+width: 360px;
+height: 40px;
+}
+
+.input-delay:hover {
+  border: 1px solid #000;
+}
+
+.input-delay:pressed {
+  border: 1px solid #4e75ff;
+
+}
+
+.fieldset {
+  width: 340px;
+height: 64px;
+border-radius: 4px;
+stroke-width: 1px;
+stroke: #808080;
+margin-bottom: 24px;
+}
+.fieldset:hover
+.fieldset:pressed {
+  stroke: #000;
+}
+.legend {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #2e2f42;
+}
+.input-state {
+
+
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+color: #2e2f42;
+}
+.label-state {
+  width: 112px;
+height: 32px;
+margin-left: 48px;
+margin-top: 36px;
+}
+
+.btn-submit {
+  border-radius: 8px;
+padding: 8px 16px;
+width: 360px;
+height: 40px;
+background: #4e75ff;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.04em;
+color: #fff;
+}
+
+.btn-submit:hover {
+  background: #6c8cff;
+}
